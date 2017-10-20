@@ -1,8 +1,8 @@
-/* GLOBAL VARIABLES */
-var listOfProducts;
-// add more global variables when needed..
 
-/* Get products from the json file and store it in a javascript variable */
+var listOfProducts;
+
+
+
 fetch("./products.json")
 .then(function(response) {
     return response.json();
@@ -13,24 +13,24 @@ fetch("./products.json")
 });
 
 /** Uses the loaded products data to create a visible product list on the website */
-function createUIFromLoadedProducts() {
+    function createUIFromLoadedProducts() {
     //Skapar diven där allt ska skrivas ut
-    var content = document.createElement("content");
+    var content = document.createElement("div");
    
 
-    for (var i = 0; i < listOfProducts.length; i++ ){
+        for (var i = 0; i < listOfProducts.length; i++ ){
         var productCard = createProductCard(listOfProducts[i]);
         content.appendChild(productCard);
 
     }
     document.body.appendChild(content);
     /* Check your console to see that the products are stored in the listOfProducts varible */
-    console.log(listOfProducts);
+  
 
 
 }
 
-function createProductCard (listOfProducts) {
+    function createProductCard (listOfProducts) {
     var productCard = document.createElement("div")
     productCard.className = "productCard";
 
@@ -55,16 +55,19 @@ function createProductCard (listOfProducts) {
     productCard.appendChild(buttonElement);
 
 
-    var count  = 0;
+     button  = 0;
     
      var span = document.querySelector("span");
-    // span.innerText = count;
       buttonElement.onclick = function() {
-         count += 1;
-         span.innerText = count;
+         button += 1;
+         span.innerText = button;
       }
 
     return productCard;
+
+    var buttonElement = document.createElement("button");
+    buttonElement.innerText = "Add to cart";
+    productCard.appendChild(buttonElement);
 }
 
   
@@ -72,6 +75,3 @@ function createProductCard (listOfProducts) {
 
 
  
-  
-/* Read the projects readme before you start! */
-/* Good luck and have fun 🤓 */
