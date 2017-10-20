@@ -65,9 +65,7 @@ fetch("./products.json")
 
     return productCard;
 
-    var buttonElement = document.createElement("button");
-    buttonElement.innerText = "Add to cart";
-    productCard.appendChild(buttonElement);
+
 }
 
   
