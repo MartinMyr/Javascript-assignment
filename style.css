@@ -7,7 +7,7 @@ body{
     background-color:#212121;
     margin-top:0;
     width:100%;
-    height:70px;
+    height:100px;
     position:fixed;
     color:#FFF;
 }
@@ -20,28 +20,23 @@ body{
    margin-right:15%;
    color:#FFF;
    padding-top:0.75em;
-
-}
-
-#content{
-   
-    margin:auto;
-    
-} 
-
-.productCard{
-    width:100%;
-    max-height:100%;
-    text-align:center;
-    padding-top: 70px;
-    margin-bottom:5%;
-}
-
-img{
-    height:500px;
 }
 span{
     color:#FFF;
+}
+
+#content{
+    margin:auto;
+} 
+
+
+.productCard{
+    text-align:center;
+    margin-bottom:5%;
+    padding-top:100px; 
+}
+img{
+    max-height:400px;
 }
 
 button{
@@ -52,27 +47,11 @@ button{
     padding: 1em;
 }
 
-
 a:visited, a:link, a:hover{
     color: #FFF;
 }
 
 
-
-@media screen and (min-width: 700px){
-    #content{
-        display:flex;
-    }
-    .productCard{
-        flex-grow:3;
-    }
-    #header{
-        flex-grow:1;
-    }
+.productCard:nth-of-type(even){
+    background-color:#F5F5F5;
 }
-/*
-Blå: #5596F5
-Röd: #E64E4E
-Grå: #F5F5F5
-Vit: #FFF
-Svart: #212121
