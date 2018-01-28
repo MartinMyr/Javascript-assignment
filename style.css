@@ -1,16 +1,16 @@
 body{
     margin:0;
-    padding:0;
-    
+    padding:0; 
 }
 
 #header{
     background-color:#212121;
-    margin-top:0;
     width:100%;
-    height:10vh;
+    height:60px;
     position:fixed;
     color:#FFF;
+    padding-top:0;
+    margin-top:0;
 }
 #store{
     float:left;
@@ -29,23 +29,16 @@ span{
 #content{
    margin:auto;
    width:100%;
-  
-   
-   
 } 
 
 .productCard{
     text-align:center;
-   
-    
     height:100vh;
-    width:100%;
-  
+    width:100%; 
+    padding-top: 60px;
 }
 img{
-    max-height:400px;
-   
-    
+    max-height:400px;   
 }
 
 button{
@@ -54,9 +47,7 @@ button{
     color: #FFF;
     border:transparent;
     padding: 1em;
-    font-size:20px;
-   
-   
+    font-size:20px;   
 }
 
 a:visited, a:link, a:hover{
